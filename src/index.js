@@ -3,6 +3,8 @@ import React, {useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types'
 import reactToWebComponent from 'react-to-webcomponent';
+import './app.css';
+
 
 const App = ({name}) => {
     
