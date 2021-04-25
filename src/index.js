@@ -6,18 +6,17 @@ import reactToWebComponent from 'react-to-webcomponent';
 import './app.css';
 
 
-const App = ({name}) => {
-    
+const App = ({name}) => {   
     useEffect( () => {
         console.log("Our prop 'name':", name)
     }, []) 
     
     return <div>Hello react web component + {name}</div>
-    
+
 }
 
 App.propTypes = {
     name: PropTypes.string.isRequired
 };
 
-customElements.define("web-greeting", reactToWebComponent(App, React, ReactDOM) );
+customElements.define("web-greeting", reactToWebComponent(App, React, ReactDOM, {shadow: true}) );
