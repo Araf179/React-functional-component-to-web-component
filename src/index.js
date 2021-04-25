@@ -10,6 +10,7 @@ const App = ({name}) => {
     }, []) 
     
     return <div>Hello react web component + {name}</div>
+    
 }
 
 App.propTypes = {
